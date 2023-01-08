@@ -1,0 +1,108 @@
+@font-face {
+  font-family: "NanumBarunGothic";
+  src: url("/fonts/NanumBarunGothic.eot");
+  src: url("/fonts/NanumBarunGothic.eot") format("embedded-opentype"),
+    url("/fonts/NanumBarunGothic.woff") format("woff");
+}
+
+.hidden {
+  display: none;
+}
+
+img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+  opacity: 80%;
+}
+
+body {
+  font-family: "NanumGothic", "serif";
+  color: whitesmoke;
+  text-shadow: 2px 2px 2px #000;
+}
+
+#login-form input {
+  width: 150px;
+  height: 30px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 5px;
+  border-bottom: 3px solid black;
+}
+
+#todo-form input {
+  width: 500px;
+  height: 32px;
+  font-size: 15px;
+  border: 0;
+  border-radius: 15px;
+  outline: none;
+  padding-left: 10px;
+  border-radius: 5px;
+  background-color: rgb(233, 233, 233);
+}
+
+#todo-list {
+  list-style: square inside
+    url("https://www.finney-taylor.com/App_Themes/FTaylor/images/bullets/listBullet.gif");
+}
+
+ul li button {
+  position: relative;
+  border: none;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-family: "paybooc-Light", sans-serif;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.25s;
+  border: 3px solid #77af9c;
+  color: darkgray;
+}
+
+#login-form button {
+  background-color: #c2fbd7;
+  border-radius: 10px;
+  box-shadow: rgba(44, 187, 99, 0.2) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px,
+    rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px,
+    rgba(44, 187, 99, 0.15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#login-form button:hover {
+  box-shadow: rgba(44, 187, 99, 0.35) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.25) 0 1px 2px, rgba(44, 187, 99, 0.25) 0 2px 4px,
+    rgba(44, 187, 99, 0.25) 0 4px 8px, rgba(44, 187, 99, 0.25) 0 8px 16px,
+    rgba(44, 187, 99, 0.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+#quote div:first-child {
+  font-size: 15px;
+}
+
+#quote div:last-child {
+  font-size: 10px;
+}
